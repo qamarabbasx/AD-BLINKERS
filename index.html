@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdBlinkers</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <section class="banner">
+      
+
+        <header class="banner-bottom">
+            <div class="logo">
+                <h1 class="company-logo">AdBlinkers</h1>
+            </div>
+            
+
+            <div class="links-to-products">
+                <ul class="list-of-links" id="header-links">
+                    <a href="index.html" class="list-of-links">
+                        <li class="list-of-links for-hover active" id="home-btn">HOME</li>
+                    </a>
+                    <a href="index.html" class="list-of-links">
+                        <li class="list-of-links for-hover" id="laundry-btn">LAUNDRY ORGANIZATION</li>
+                    </a>
+                    <a href="index.html" class="list-of-links">
+                        <li class="list-of-links for-hover" id="closet-btn">CLOSET ORGANIZATION</li>
+                    </a>
+                    <a href="index.html" class="list-of-links">
+                        <li class="list-of-links for-hover" id="bathroom-btn">BATHROOM ORGANIZATION</li>
+                    </a>
+
+
+                    <button onclick="openMenu()" class="list-of-links for-hover" id="menu-opens">MORE</button>
+
+                </ul>
+            </div>
+
+            <input type="text" name="search" id="search-bar" placeholder="Search all the AdBlinkers" />
+        </header>
+    </section>
+
+    <div class="open-menu" id="on-click-menu">
+        <button class="back-btn" onclick="closeMenu()">← Back</button>
+        <ul class="menu-options">
+            <a href="index.html" class="links">
+                <li class="options-in-menu">HOME</li>
+            </a>
+            <a href="index.html" class="links">
+                <li class="options-in-menu">LAUNDRY ORGANIZATION</li>
+            </a>
+            <a href="index.html" class="links">
+                <li class="options-in-menu">CLOSET ORGANIZATION</li>
+            </a>
+            <a href="index.html" class="links">
+                <li class="options-in-menu">BATHROOM ORGANIZATION</li>
+            </a>
+            <a href="index.html" class="links">
+                <li class="options-in-menu">ENTRYWAY ORGANIZATION</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="my-cart" onclick="openCart()">
+        <p id="item-counter">0</p>
+        <img class="cart-logo" src="/Images/cart_logo-removebg-preview.png" alt="Cart Logo">
+        <p class="cart-text">My Cart</p>
+    </div>
+
+    <div class="items-to-cart" id="open-cart">
+        <button class="back-btn items-btn" onclick="closeCart()">← Back</button>
+        
+            <h1 class="cart-heading" id="cart-display">My Cart</h1>
+        
+
+        <div class="cart-headings cart-4-grid">
+            <p class="headings-of-cartItem">Item</p>
+            <p class="headings-of-cartItem">Price</p>
+            <p class="headings-of-cartItem">Quantity</p>
+        </div>
+
+        <div class="cart-content">
+                
+        </div>
+
+        <a href="form.html" class="checkout-btn">Check Out</a>
+        <div class="total-amount">
+            <p class="total-heading">Total</p>
+            <p class="cart-priceTag total-price" id="price-of-item">$0</p>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="top-img">
+            <img class="main-img" src="/Images/22bd4ee46fa1701f7896288c162e5a4d.w3000.h1500._CR0,0,3000,1500_.jpg"
+                alt="" />
+        </div>
+
+        <div class="grid-4-cols">
+            <img class="organize-img"
+                src="/Images/4556a27560af4eb3de01c7cfaae4f46a.w750.h750._CR0,0,750,750_SX375_SY375_.jpg"
+                alt="Organize Laudry" />
+            <img class="organize-img"
+                src="/Images/588559210d152d86f5841ec8e9e213a5.w750.h750._CR0,0,750,750_SX375_SY375_.jpg"
+                alt="Organize Closet" />
+            <img class="organize-img"
+                src="/Images/b8b3ace60693f1a0fe9260c818fd4c8a.w750.h750._CR0,0,750,750_SX375_SY375_.jpg"
+                alt="Organize Bathroom" />
+            <img class="organize-img"
+                src="/Images/e095cb99d20663f6cf95b11847f6735e.w750.h750._CR0,0,750,750_SX375_SY375_.jpg"
+                alt="Organize Wall Space" />
+        </div>
+
+        <div class="grid-2-cols">
+            <div class="left-img-box">
+                <img class="door-img" src="/Images/4f7b6bd4a98d84a2e70fb7ce595adc76.w750.h750._CR0,0,750,750_.jpg"
+                    alt="Laundry Hamper hanging on door" />
+            </div>
+            <div class="right-img-box">
+                <img class="hanging-img" src="/Images/7c4d5d4633959bb8c0b927c0628768cf.w300.h300._CR0,0,300,300_.jpg"
+                    alt="Laudry Hamper Hanging" />
+                <img class="hanging-img" src="/Images/90ef66a27c835627fed48ca2610c63b6.w750.h750._CR0,0,750,750_.jpg"
+                    alt="Hanging Laundry" />
+                <img class="hanging-img"
+                    src="/Images/29aa2bfadedbf24c94fa99744cc808bb.w1601.h1601._CR0,0,1204,1204_.jpg" alt="Key Holder" />
+                <img class="hanging-img" src="/Images/450f90030c28004f73b90efa23aa00f3.w750.h750._CR0,0,750,750_.jpg"
+                    alt="Portable Hanging" />
+            </div>
+        </div>
+
+        <div class="products-section">
+            <h3 class="heading">Recommended for You</h3>
+            <div class="all-products" id="products-id">
+                <div class="products-line-1" id="products-slider">
+                    <img src="/Images/71ztfrKiHuL._AC_SX375_.jpg" alt="" class="product-img box-hide" />
+                    <img src="/Images/71B7PlZHn7L._AC_SX375_.jpg" alt="" class="product-img box-hide" />
+                    <img src="/Images/81jKJj9LurL._AC_SX750_.jpg" alt="" class="product-img box-hide" />
+                    <img src="/Images/612src96MrL._AC_SX750_.jpg" alt="" class="product-img box-hide" />
+                    <img src="/Images/71HUwg48-kL._AC_SX750_.jpg" alt="" class="product-img box-hide" />
+                    <img src="/Images/71fyRySpPfL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+                    <img src="/Images/81wFzQIFskL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+                    <img src="/Images/71Fi119PURL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+                </div>
+                <h1 class="hanging-laundry-heading">Hanging Laundry Hamper</h1>
+                <div class="grid-4-cols laundry-bag-section">
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/71ztfrKiHuL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>15<span class="dollar">.99</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()" id="product-1" >ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/71igxoYDcEL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>13<span class="dollar">.49</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/51xlD3eV4NL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>15<span class="dollar">.99</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/61-i6GCcyoL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>13<span class="dollar">.49</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/71PW4dW8PyL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>13<span class="dollar">.49</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/51O8DmM+BOL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>12<span class="dollar">.99</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/71B7PlZHn7L._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>16<span class="dollar">.99</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                    <div class="img-div">
+                        <img class="laundry-bag-img box-shadow" src="/Images/61+Mb0r7DWL._AC_SX375_.jpg" alt="" />
+                        <p class="price-tag">
+                            <span class="dollar">$</span>14<span class="dollar">.99</span>
+                        </p>
+                        <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="key-holder">
+        <h1 class="hanging-laundry-heading">Key Holder</h1>
+        <div class="key-hanger">
+            <div class="keyholder-img">
+                <img class="img-bag-table box-shadow hanging-img" src="/Images/71HUwg48-kL._AC_SX750_.jpg" alt="">
+                <p class="price-tag"><span class="dollar">$</span>22<span class="dollar">.99</span></p>
+                <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+            </div>
+            <div class="keyholder-img">
+                <img class="img-bag-table box-shadow hanging-img" src="/Images/71F2lPhbl3L._AC_SX750_.jpg" alt="">
+                <p class="price-tag"><span class="dollar">$</span>23<span class="dollar">.99</span></p>
+                <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <seciton class="hanging-bag">
+        <h1 class="hanging-laundry-heading">Portable Hanging Shower Organizer</h1>
+        <div class="shower-bag">
+            <div class="shower-bag-img">
+                <img class="bag-img hanging-img large-bag-img bag-img-for-js" src="/Images/81jKJj9LurL._AC_SX750_.jpg" alt="">
+                <p class="price-tag"><span class="dollar">$</span>18<span class="dollar">.99</span></p>
+                <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+            </div>
+
+            <div class="shower-bag-img">
+                <img class="bag-img hanging-img bag-img-for-js" src="/Images/71fyRySpPfL._AC_SX375_.jpg" alt="">
+                <p class="price-tag"><span class="dollar">$</span>19<span class="dollar">.99</span></p>
+                <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+            </div>
+
+            <div class="shower-bag-img">
+                <img class="bag-img hanging-img bag-img-for-js" src="/Images/81EXd8IYNaS._AC_SX375_.jpg" alt="">
+                <p class="price-tag"><span class="dollar">$</span>17<span class="dollar">.49</span></p>
+                <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+            </div>
+        </div>
+    </seciton>
+    <div class="hamper-div">
+        <div></div>
+        <div class="shower-bag-img for-margin">
+            <img class="large-bag-img hanging-img bag-img-for-js" src="/Images/612src96MrL._AC_SX750_.jpg" alt="">
+            <p class="price-tag"><span class="dollar">$</span>16<span class="dollar">.99</span></p>
+            <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
+        </div>
+        <div></div>
+    </div>
+    <section class="banner">
+        <div>
+            <h1 class="seller-h">Best Sellers</h1>
+        </div>
+        <div class="products-line-1">
+            <img src="/Images/71ztfrKiHuL._AC_SX375_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/71B7PlZHn7L._AC_SX375_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/81jKJj9LurL._AC_SX750_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/612src96MrL._AC_SX750_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/71HUwg48-kL._AC_SX750_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/71fyRySpPfL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/81wFzQIFskL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+            <img src="/Images/71Fi119PURL._AC_SX220_SY230_.jpg" alt="" class="product-img box-shadow" />
+        </div>
+    </section>
+    <section>
+        <div class="share-h-div">
+            <h1 class="share-h">Share</h1>
+        </div>
+        <div class="share-div">
+            <p class="share-p">Share this page with your friends.</p>
+        </div>
+        <div class="fb-tw-pi-div">
+            <a href=""> <img class="fb-div" src="/Images/facebook._CB485941703_.png" alt=""></a>
+            <a href=""><img class="fb-div" src="/Images/twitter._CB438369374_.png" alt=""></a>
+            <a href=""><img class="fb-div" src="/Images/pinterest._CB485948203_.png" alt=""></a>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

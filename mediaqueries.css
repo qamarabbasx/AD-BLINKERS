@@ -1,0 +1,200 @@
+@media screen and (min-width: 1600px) {
+    .door-img{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    html{
+        font-size: 8px;
+    }
+}
+
+
+/* @media screen and (max-width: 1310px) {
+    .options-in-menu{
+        font-size: 3rem;
+        padding: 1rem 2rem;
+    }
+} */
+
+@media screen and (max-width: 1160px) {
+    html{
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 1014px) {
+    #bathroom-btn{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .product-img{
+        width: 20vw;
+        height: 20vh;
+    }
+    .laundry-bag-img{
+        height: 70%;
+     }
+}
+
+@media screen and (max-width: 880px) {
+    #closet-btn{
+        display: none;
+    }
+   
+    .list-of-links{
+        gap: 3rem;
+    }
+
+    .grid-4-cols{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .list-of-links{
+        gap: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .product-img{
+        width: 18vw;
+        height: 15vh;
+    }
+    .products-line-1{
+        gap: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner-bottom{
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .company-logo{
+        padding-bottom: 0;
+    }
+
+    .list-of-links{
+        display: flex;
+        justify-content: center;
+        padding: 0.6rem 0;
+        align-items: center;
+    }
+
+    .options-in-menu{
+        font-size: 1.6rem;
+    }
+
+    .key-hanger{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .shower-bag{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .shower-bag-img{
+        height: 30%;
+        width: 40%;
+    }    
+}
+
+
+@media screen and (max-width: 560px) {
+    .product-img{
+        height: 16vh;
+    }
+    .products-line-1{
+        gap: 6rem;
+    }
+    .grid-4-cols{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .options-in-menu{
+        font-size: 1.3rem;
+    }
+
+    .back-btn{
+        font-size: 1.3rem;
+    }
+    .cart-btn{
+        font-size: 1.3rem;
+    }
+
+    .img-div{
+        padding-bottom: 6rem;
+    }
+
+    .grid-2-cols{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 422px) {
+    .options-in-menu{
+        font-size: 1rem;
+    }
+
+    .back-btn{
+        font-size: 1rem;
+    }
+
+    .laundry-bag-section{
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .product-img{
+        height: 10vh;
+    }
+
+    .products-line-1{
+        gap: 2rem;
+    }
+
+    .laundry-bag-section{
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .grid-4-cols{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .img-div{
+        width: 40%;
+    }
+}
