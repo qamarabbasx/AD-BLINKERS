@@ -51,6 +51,14 @@ html{
     border-radius: 3rem;
 }
 
+.for-output{
+    width: 50rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border: 1px solid;
+    border-radius: 3rem;
+}
+
 .grid-email {
     grid-column: 1/ span 2;
 }

@@ -21,11 +21,9 @@ function addtocart() {
   i++;
   document.getElementById("item-counter").innerText = i;
 }
-
-let b = document.getElementById("item-counter").innerText;
 function removeFromCart() {
-  b--;
-  document.getElementById("item-counter").innerText = i + b;
+  i--;
+  document.getElementById("item-counter").innerText = i;
 }
 
 var removeCartItemButtons = document.getElementsByClassName(`item-remove-btn`)
@@ -128,7 +126,7 @@ for( let i = 0; i < addToCartButtons.length; i++){
   button.addEventListener(`click` , function addToCartClicked(event){
     let button = event.target
     let shopItem = button.parentElement
-    let title = document.getElementsByClassName(`hanging-laundry-heading`)[0].textContent
+    let title = document.getElementsByClassName(`keyHolder-heading`)[0].textContent
     let price = shopItem.getElementsByClassName(`price-tag`)[0].innerText
     let imageSrc = shopItem.getElementsByClassName(`img-bag-table`)[0].src
     console.log(title, price , imageSrc);
@@ -144,7 +142,7 @@ for( let i = 0; i < addToCartButtons.length; i++){
   button.addEventListener(`click` , function addToCartClicked(event){
     let button = event.target
     let shopItem = button.parentElement
-    let title = document.getElementsByClassName(`hanging-laundry-heading`)[0].textContent
+    let title = document.getElementsByClassName(`showerbag-heading`)[0].textContent
     let price = shopItem.getElementsByClassName(`price-tag`)[0].innerText
     let imageSrc = shopItem.getElementsByClassName(`bag-img-for-js`)[0].src
     console.log(title, price , imageSrc);
@@ -154,10 +152,7 @@ for( let i = 0; i < addToCartButtons.length; i++){
 }
 
 
-function orderPlaced(){
-    document.getElementById(`display-msg`).style.display = `block`;
-    document.getElementById(`section-form`).style.opacity = 0;
-}
-
-
-
+// function orderPlaced(){
+//     document.getElementById(`display-msg`).style.display = `block`;
+//     document.getElementById(`section-form`).style.opacity = 0;
+// }

@@ -9,13 +9,21 @@ html{
 
 .banner{
     padding: 0 4rem;
+    background-color: #f8f8f8;
 }
 
 
 .company-logo{
     font-size: 2rem;
-    padding: 4rem;
-    
+    padding: 4rem; 
+}
+
+.logo-top{
+    width: 40%;
+}
+
+.links-to-products{
+    width: 130%;
 }
 
 .company-name{
@@ -468,7 +476,6 @@ html{
     display: flex;
     align-items: center;
     gap: 1rem;
-    justify-content: center;
 }
 .total-amount{
     display: flex;
@@ -494,9 +501,13 @@ html{
     vertical-align: super;
 }
 
+.item-remove-btn:hover{
+    cursor: pointer;
+}
+
 .checkout-btn{
-    position: fixed;
-    bottom: 2%;
+    position: absolute;
+    bottom: 1%;
     right: 3%;
     background-color: rgb(255, 123, 0);
     color: white;
