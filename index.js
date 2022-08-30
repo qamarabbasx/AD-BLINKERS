@@ -9,15 +9,11 @@ function closeMenu() {
 function openCart() {
   document.getElementById(`cart-display`).style.display =  `inline-block`
   document.getElementById("open-cart").style.width = "80%";
-  setTimeout(function () {
-    document.querySelector(`.checkout-btn`).style.display = `block`;
-  }, 300)
 }
 
 function closeCart() {
   document.getElementById("open-cart").style.width = "0%";
   document.getElementById(`cart-display`).style.display =  `none`
-  document.querySelector(`.checkout-btn`).style.display = `none`;
 }
 
 let i = document.getElementById("item-counter").innerText;
@@ -60,6 +56,16 @@ function updateCartTotal(){
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName(`total-price`)[0].innerText = `$` + total
+
+
+    if(total >=1){
+        document.querySelector(`.checkout-btn`).style.display = `inline`;
+    }
+    else{
+      document.querySelector(`.checkout-btn`).style.display = `none`;
+    }
+
+  
 }
 
 
@@ -149,7 +155,9 @@ for( let i = 0; i < addToCartButtons.length; i++){
 
 
 function orderPlaced(){
-  document.getElementById(`display-msg`).style.display = `block`;
-  document.getElementById(`section-form`).style.opacity = 0;
+    document.getElementById(`display-msg`).style.display = `block`;
+    document.getElementById(`section-form`).style.opacity = 0;
 }
+
+
 
