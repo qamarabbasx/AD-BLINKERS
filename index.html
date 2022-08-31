@@ -12,37 +12,41 @@
 
 <body>
     <section class="banner">
-      
+
 
         <header class="banner-bottom">
-            <div class="logo">
-                <!-- <h1 class="company-logo">AdBlinkers</h1> -->
+            <div class="img-top-logo">
+
                 <img src="/Images/AdBlinkers.png" alt="Logo" class="logo-top">
             </div>
-            
+            <!-- <h1 class="company-logo">AdBlinkers</h1> -->
 
-            <div class="links-to-products">
-                <ul class="list-of-links" id="header-links">
-                    <a href="index.html" class="list-of-links">
-                        <li class="list-of-links for-hover active" id="home-btn">HOME</li>
-                    </a>
-                    <a href="index.html" class="list-of-links">
-                        <li class="list-of-links for-hover" id="laundry-btn">LAUNDRY ORGANIZATION</li>
-                    </a>
-                    <a href="index.html" class="list-of-links">
-                        <li class="list-of-links for-hover" id="closet-btn">CLOSET ORGANIZATION</li>
-                    </a>
-                    <a href="index.html" class="list-of-links">
-                        <li class="list-of-links for-hover" id="bathroom-btn">BATHROOM ORGANIZATION</li>
-                    </a>
+            <div class="banner-2">
+
+                <div class="links-to-products">
+                    <ul class="list-of-links" id="header-links">
+                        <a href="index.html" class="list-of-links">
+                            <li class="list-of-links for-hover active" id="home-btn">HOME</li>
+                        </a>
+                        <a href="index.html" class="list-of-links">
+                            <li class="list-of-links for-hover" id="laundry-btn">LAUNDRY ORGANIZATION</li>
+                        </a>
+                        <a href="index.html" class="list-of-links">
+                            <li class="list-of-links for-hover" id="closet-btn">CLOSET ORGANIZATION</li>
+                        </a>
+                        <a href="index.html" class="list-of-links">
+                            <li class="list-of-links for-hover" id="bathroom-btn">BATHROOM ORGANIZATION</li>
+                        </a>
 
 
-                    <button onclick="openMenu()" class="list-of-links for-hover" id="menu-opens">MORE</button>
+                        <button onclick="openMenu()" class="list-of-links for-hover" id="menu-opens">MORE</button>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
 
             <input type="text" name="search" id="search-bar" placeholder="Search all the AdBlinkers" />
+
         </header>
     </section>
 
@@ -75,9 +79,9 @@
 
     <div class="items-to-cart" id="open-cart">
         <button class="back-btn items-btn" onclick="closeCart()">← Back</button>
-        
-            <h1 class="cart-heading" id="cart-display">My Cart</h1>
-        
+
+        <h1 class="cart-heading" id="cart-display">My Cart</h1>
+
 
         <div class="cart-headings cart-4-grid">
             <p class="headings-of-cartItem">Item</p>
@@ -86,9 +90,9 @@
         </div>
 
         <div class="cart-content">
-                
+
         </div>
-        
+
         <a href="form.html" class="checkout-btn">Check Out</a>
         <div class="total-amount">
             <p class="total-heading">Total</p>
@@ -154,7 +158,7 @@
                         <p class="price-tag">
                             <span class="dollar">$</span>15<span class="dollar">.99</span>
                         </p>
-                        <button class="cart-btn" onclick="addtocart()" id="product-1" >ADD TO CART</button>
+                        <button class="cart-btn" onclick="addtocart()" id="product-1">ADD TO CART</button>
                     </div>
                     <div class="img-div">
                         <img class="laundry-bag-img box-shadow" src="/Images/71igxoYDcEL._AC_SX375_.jpg" alt="" />
@@ -233,7 +237,8 @@
         <h1 class="hanging-laundry-heading showerbag-heading">Portable Hanging Shower Organizer</h1>
         <div class="shower-bag">
             <div class="shower-bag-img">
-                <img class="bag-img hanging-img large-bag-img bag-img-for-js" src="/Images/81jKJj9LurL._AC_SX750_.jpg" alt="">
+                <img class="bag-img hanging-img large-bag-img bag-img-for-js" src="/Images/81jKJj9LurL._AC_SX750_.jpg"
+                    alt="">
                 <p class="price-tag"><span class="dollar">$</span>18<span class="dollar">.99</span></p>
                 <button class="cart-btn" onclick="addtocart()">ADD TO CART</button>
             </div>
@@ -283,9 +288,11 @@
             <p class="share-p">Share this page with your friends.</p>
         </div>
         <div class="fb-tw-pi-div">
-            <a href="https://www.facebook.com/"> <img class="fb-div" src="/Images/facebook._CB485941703_.png" alt=""></a>
+            <a href="https://www.facebook.com/"> <img class="fb-div" src="/Images/facebook._CB485941703_.png"
+                    alt=""></a>
             <a href="https://www.twitter.com/"><img class="fb-div" src="/Images/twitter._CB438369374_.png" alt=""></a>
-            <a href="https://www.pinterest.com/"><img class="fb-div" src="/Images/pinterest._CB485948203_.png" alt=""></a>
+            <a href="https://www.pinterest.com/"><img class="fb-div" src="/Images/pinterest._CB485948203_.png"
+                    alt=""></a>
         </div>
     </section>
     <footer>
@@ -293,18 +300,27 @@
             <img class="our-logo" src="/Images/AdBlinkers.png" alt="AdBlinkers Logo">
         </div>
         <div class="address">
-            <p class="color"><span class="footer-para">Address:</span> 5900 Balcones Dr Ste 100,<br>Austin, Texas, 78731</p>
+            <p class="color"><span class="footer-para">Address:</span> 5900 Balcones Dr Ste 100,<br>Austin, Texas, 78731
+            </p>
             <p class="ph-num color"><span class="footer-para">Phone:</span> +1 512 617 3797</p>
             <p class="ph-num color"><span class="footer-para">Email:</span> admin@adblinkers.com</p>
         </div>
         <div class="customer-care">
             <div class="customer-links">
-                <h1>CUSTOMER CARE</h1>
+                <h1 class="care-heading">CUSTOMER CARE</h1>
                 <ul class="footer-list">
-                    <a href="returnPolicy.html" target="_blank"><li>Return Policy</li></a>
-                    <a href="deliveryPolicy.html" target="_blank"><li>Delivery Policy</li></a>
-                    <a href="refundPolicy.html" target="_blank"><li>Refund Policy</li></a>
-                    <a href="paymentMethods.html" target="_blank"><li>Payment Methods</li></a>
+                    <a href="returnPolicy.html" target="_blank">
+                        <li>Return Policy</li>
+                    </a>
+                    <a href="deliveryPolicy.html" target="_blank">
+                        <li>Delivery Policy</li>
+                    </a>
+                    <a href="refundPolicy.html" target="_blank">
+                        <li>Refund Policy</li>
+                    </a>
+                    <a href="paymentMethods.html" target="_blank">
+                        <li>Payment Methods</li>
+                    </a>
                 </ul>
             </div>
         </div>

@@ -23,26 +23,21 @@ html{
 }
 
 .logo-top{
-    width: 40%;
+    max-width: 100%;
 }
-
-.links-to-products{
-    width: 130%;
-}
-
-.company-name{
-    font-size: 1.5rem;
-    color: grey;
-    padding-bottom: 0.4rem;
-}
-
-
 
 .banner-bottom{
+    display: grid;
+    grid-template-columns: 10% 74% 16%;
+    align-items: center;
+    border-bottom: 4px solid grey;
+    padding-bottom: 1.3rem;
+}
+
+.banner-2{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 4px solid grey;
+    justify-content: center;
 }
 
 .list-of-links{

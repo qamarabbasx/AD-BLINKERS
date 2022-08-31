@@ -4,6 +4,15 @@
     }
 }
 
+@media screen and (max-width: 1520px) {
+    .banner-2{
+        gap: 6rem;
+    }
+    .list-of-links{
+        gap: 3rem;
+    }
+}
+
 @media screen and (max-width: 1430px) {
     html{
         font-size: 9px;
@@ -45,6 +54,10 @@
     .laundry-bag-img{
         height: 70%;
      }
+
+     #item-counter{
+        position: static;
+     }
 }
 
 @media screen and (max-width: 880px) {
@@ -67,6 +80,10 @@
     .list-of-links{
         gap: 1.2rem;
     }
+
+    .my-cart{
+        width: 18%;
+    }
 }
 
 
@@ -82,14 +99,14 @@
 
 @media screen and (max-width: 600px) {
     .banner-bottom{
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         align-items: center;
-        padding-bottom: 1rem;
     }
 
-    .company-logo{
-        padding-bottom: 0;
+    .logo-top{
+        max-width: 30%;
     }
 
     .list-of-links{
@@ -116,7 +133,11 @@
     .shower-bag-img{
         height: 30%;
         width: 40%;
-    }    
+    }  
+    
+    .my-cart{
+        width: 28%;
+    }
 }
 
 
@@ -131,6 +152,17 @@
         grid-template-columns: 1fr 1fr;
         
     }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .customer-care {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+    }
+    
 }
 
 
@@ -148,6 +180,7 @@
 
     .img-div{
         padding-bottom: 6rem;
+        height: 69%;
     }
 
     .grid-2-cols{
@@ -169,6 +202,15 @@
     .laundry-bag-section{
         gap: 2rem;
     }
+    .address{
+        font-size: 1rem;
+    }
+    .footer-list>a{
+        font-size: 1rem;
+    }
+    .care-heading{
+        font-size: 1rem;
+    }
 }
 
 
@@ -183,6 +225,11 @@
 
     .laundry-bag-section{
         gap: 1rem;
+    }
+
+    .img-div{
+        padding-bottom: 9rem;
+        height: 50%;
     }
 }
 
