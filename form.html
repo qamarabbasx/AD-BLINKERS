@@ -29,28 +29,28 @@
 
                 <div class="grid-email">
                     <label for="mail" class="label-mail">Country</label>
-                    <input type="text" name="text"  class="for-output"  id="country" placeholder="United States" required>
+                    <input type="text" name="text" class="for-output" id="country" placeholder="United States" required>
                 </div>
 
                 <div class="grid-email">
                     <label for="mail" class="label-mail">Address</label>
-                    <input type="text" name="text"  class="for-output" id="address" placeholder="26985 Brighton Lane, Lake Forest, CA 92630."
-                        required>
+                    <input type="text" name="text" class="for-output" id="address"
+                        placeholder="26985 Brighton Lane, Lake Forest, CA 92630." required>
                 </div>
 
                 <div class="grid-email">
                     <label for="mail" class="label-mail">City/Town</label>
-                    <input type="text" name="text"  class="for-output" id="city" placeholder="New York" required>
+                    <input type="text" name="text" class="for-output" id="city" placeholder="New York" required>
                 </div>
 
                 <div class="grid-email">
                     <label for="mail" class="label-mail">Postal Code</label>
-                    <input type="number" name="text"  class="for-output" id="postal" placeholder="10006" required>
+                    <input type="number" name="text" class="for-output" id="postal" placeholder="10006" required>
                 </div>
 
                 <div class="grid-email">
                     <label for="mail" class="label-mail">Phone Number</label>
-                    <input type="number" name="text" class="for-output"  id="phone" placeholder="+1xxxxx..." required>
+                    <input type="number" name="text" class="for-output" id="phone" placeholder="+1xxxxx..." required>
                 </div>
 
 
@@ -59,7 +59,8 @@
                     <label for="area" class="area-label">Message</label>
                     <textarea name="text" id="area" cols="69" rows="10" placeholder="Optional..."></textarea>
                 </div>
-                <div class="submit-btn"> <button onclick="message()" id="btn-sub" class="btn--1">Place Order</button> </div>
+                <div class="submit-btn"> <button onclick="message()" id="btn-sub" class="btn--1">Place Order</button>
+                </div>
             </form>
 
 
@@ -72,24 +73,25 @@
     </div>
     <script>
 
-        function message(){
-    var Name = document.getElementById('firstname');
-    var email = document.getElementById('lastname');
-    var msg = document.getElementById('mail');
-    var address = document.getElementById('address');
-    var city = document.getElementById('city');
-    var phone = document.getElementById('phone');
-    var postal = document.getElementById('postal');
-    var country = document.getElementById('country');
-    const success = document.getElementById('display-msg');
+        function message() {
+            var Name = document.getElementById('firstname');
+            var email = document.getElementById('lastname');
+            var msg = document.getElementById('mail');
+            var address = document.getElementById('address');
+            var city = document.getElementById('city');
+            var phone = document.getElementById('phone');
+            var postal = document.getElementById('postal');
+            var country = document.getElementById('country');
+            const success = document.getElementById('display-msg');
 
-    if(Name.value > '' && email.value > '' && msg.value > '' && address.value > '' && city.value > '' && phone.value > '' && postal.value > '' && country.value > ''){
-        success.style.display = 'block';
-        document.getElementById(`section-form`).style.opacity = 0;
-    }
-        
+            if (Name.value > '' && email.value > '' && msg.value > '' && address.value > '' && city.value > '' && phone.value > '' && postal.value > '' && country.value > '') {
+                success.style.display = 'block';
+                document.getElementById(`section-form`).style.opacity = 0;
 
-}
+
+            }
+
+        }
     </script>
 </body>
 

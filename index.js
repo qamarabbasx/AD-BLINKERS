@@ -90,7 +90,6 @@ for( let i = 0; i < addToCartButtons.length; i++){
     let title = document.getElementsByClassName(`hanging-laundry-heading`)[0].textContent
     let price = shopItem.getElementsByClassName(`price-tag`)[0].innerText
     let imageSrc = shopItem.getElementsByClassName(`laundry-bag-img`)[0].src
-    console.log(title, price , imageSrc);
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
   })
@@ -129,7 +128,6 @@ for( let i = 0; i < addToCartButtons.length; i++){
     let title = document.getElementsByClassName(`keyHolder-heading`)[0].textContent
     let price = shopItem.getElementsByClassName(`price-tag`)[0].innerText
     let imageSrc = shopItem.getElementsByClassName(`img-bag-table`)[0].src
-    console.log(title, price , imageSrc);
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
   })
@@ -145,7 +143,6 @@ for( let i = 0; i < addToCartButtons.length; i++){
     let title = document.getElementsByClassName(`showerbag-heading`)[0].textContent
     let price = shopItem.getElementsByClassName(`price-tag`)[0].innerText
     let imageSrc = shopItem.getElementsByClassName(`bag-img-for-js`)[0].src
-    console.log(title, price , imageSrc);
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
   })
