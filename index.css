@@ -52,12 +52,29 @@ html{
     background: none;
     border: none;
 }
+.link {
+    display: flex;
+    gap: 6rem;
+    text-decoration: none;
+    list-style: none;
+    color: #979797;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+/* .active,
+.list-of-links:hover {
+    background-color: #666;
+    color: white;
+} */
 
 .links{
     text-decoration: none;
     color: #979797;
 }
-
+.active,
 .for-hover:hover{
     color: black;
     transform: scale(1.1);
