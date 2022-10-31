@@ -1,0 +1,20 @@
+.best-seller{
+    border: 1px solid #e1e1e1;
+    padding: 4px;
+    border-radius: 17px;
+    box-shadow: 1px 1px 4px #b3b3b3;
+}
+
+.best-seller:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer-email{
+    text-transform: none;
+}
+
+.header-top{
+    background-color: black;
+}
+

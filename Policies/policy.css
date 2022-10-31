@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+.top-banner{
+    background-image: url(/Images/background\ policy.jpg);
+}
+
+.heading{
+    font-size: 6rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.grid-2-cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 6rem 6rem;
+    gap: 3rem;
+}
+
+.img-size{
+    max-width: 100%;
+    border-radius: 3rem;
+}
+
+.highlight{
+    color: #fcb91f;
+}
+
+.text-box{
+    font-size: 2rem;
+    padding: 0 14rem;
+    line-height: 1.6;
+}
+
+.box-heading{
+    padding: 1.8rem 0;
+}
+
+.para{
+    font-size: 1.6rem;
+    color: rgb(109, 108, 108);
+}
+
+.gap-para{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #f8f8f8;
+}
+
+
+.our-logo{
+    max-width: 30%;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+}
+.address{
+    font-size: 1.8rem;
+}
+.footer-para{
+    font-weight: bold;
+    color: rgb(27, 27, 27);
+}
+
+.ph-num{
+    padding-top: 2rem;
+}
+
+.color{
+    color: gray;
+}
+
+.customer-care{
+    display: flex;
+}
+
+.customer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-list>a{
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    font-size: 1.8rem;
+    line-height: 2;
+}
