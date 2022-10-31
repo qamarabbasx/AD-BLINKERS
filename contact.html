@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
+      <script>
+        $(function(){
+          $(`#header`).load(`header.html`);
+        });
+      </script> -->
+
+      <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Poppins;
+            background-image: url(/assets/images/pexels-pixabay-302769.jpg);
+            background-size: cover;
+        }
+        label{
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-right: 10px;
+        }
+        input{
+            padding: 10px 1.2rem;
+            border: 1px solid black;
+            border-radius: 13px;
+            font-size: 13px;
+        }
+        .contact-form{
+            display: grid;
+            justify-items: center;
+            row-gap: 60px;
+        }
+
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 50px;
+            border-radius: 40px;
+            background-color: #00000047;
+            /* margin-top: 10px; */
+        }
+
+        #first-name{
+            margin-right: 13px;
+        }
+
+        #e-mail{
+            width: 75%;
+            margin-left: 53px;
+            padding: 13px 1.2rem;
+        }
+
+        #text-area{
+            padding: 10px 1.2rem;
+            border: 1px solid black;
+            border-radius: 13px;
+            font-size: 13px;
+        }
+        .msg{
+            vertical-align: top;
+        }
+
+        .heading{
+            display: grid;
+            justify-items: center;
+            color: rgb(255, 255, 255);
+            font-size: 60px;
+            margin-top: 40px;
+        }
+
+
+        .btn{
+            color: white;
+            background: black;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="top-head">
+        <h1 class="heading">Contact Us</h1>
+    </div>
+    <section class="contact-form">
+        <div class="top-head"></div>
+        <div class="form-container">
+            <div class="names">
+                <label for="first-name">First Name</label>
+                <input type="text" name="name" id="first-name" placeholder="First Name">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="name" id="last-name" placeholder="Last Name">
+            </div>
+            <div class="email-id">
+                <label for="e-mail">Email</label>
+                <input type="email" name="email" id="e-mail" placeholder="Email Address">
+            </div>
+            <div class="message">
+                <label for="text-area" class="msg">Your Message</label>
+                <textarea name="text" id="text-area" cols="64" rows="10" placeholder="Message..."></textarea>
+            </div>
+            <div class="sub-btn">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
