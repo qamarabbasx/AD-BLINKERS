@@ -37,4 +37,24 @@ var x = setInterval(function() {
 
 
 
+//Item counter//
+//heart//
+let i = document.getElementById("item-counter").innerText;
+function addtocart() {
+  i++;
+  document.getElementById("item-counter").innerText = i;
+}
 
+let b = document.getElementById("item-counter").innerText;
+function removeFromCart() {
+  b--;
+  document.getElementById("item-counter").innerText = i + b;
+}
+
+
+//bag//
+let bag = document.getElementById("product-counter").innerText;
+function addToBag() {
+  i++;
+  document.getElementById("product-counter").innerText = i;
+}

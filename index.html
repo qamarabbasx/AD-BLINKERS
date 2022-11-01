@@ -211,12 +211,12 @@
 
           <button class="action-btn">
             <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">0</span>
+            <span id="item-counter" class="count">0</span>
           </button>
 
           <button class="action-btn">
             <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
+            <span id="product-counter" class="count">0</span>
           </button>
 
         </div>
@@ -563,7 +563,7 @@
       <button class="action-btn">
         <ion-icon name="bag-handle-outline"></ion-icon>
 
-        <span class="count">0</span>
+        <span class="count" id="item-counter">0</span>
       </button>
 
       <button class="action-btn">
@@ -573,7 +573,7 @@
       <button class="action-btn">
         <ion-icon name="heart-outline"></ion-icon>
 
-        <span class="count">0</span>
+        <span class="count" id="heart-counter">0</span>
       </button>
 
       <button class="action-btn" data-mobile-menu-open-btn>
@@ -1528,10 +1528,10 @@
                       <del>$5.00</del>
                       <p class="price">$3.00</p>
 
-                      <button class="btn-action best-seller">
-                        <ion-icon name="bag-add-outline"></ion-icon>
+                      <button onclick="addToBag()" class="btn-action best-seller">
+                        <ion-icon  name="bag-add-outline"></ion-icon>
                       </button>
-                      <button class="btn-action best-seller">
+                      <button onclick="addtocart()" class="btn-action best-seller">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                     </div>
@@ -1564,10 +1564,10 @@
                       <del>$8.00</del>
                       <p class="price">$4.00</p>
 
-                      <button class="btn-action best-seller">
+                      <button onclick="addToBag()" class="btn-action best-seller">
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
-                      <button class="btn-action best-seller">
+                      <button onclick="addtocart()" class="btn-action best-seller">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                     </div>
@@ -1600,10 +1600,10 @@
                       <del>$5.00</del>
                       <p class="price">$3.00</p>
 
-                      <button class="btn-action best-seller">
+                      <button onclick="addToBag()" class="btn-action best-seller">
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
-                      <button class="btn-action best-seller">
+                      <button onclick="addtocart()" class="btn-action best-seller">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                     </div>
@@ -1636,10 +1636,10 @@
                       <del>$15.00</del>
                       <p class="price">$12.00</p>
 
-                      <button class="btn-action best-seller">
+                      <button onclick="addToBag()" class="btn-action best-seller">
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
-                      <button class="btn-action best-seller">
+                      <button onclick="addtocart()" class="btn-action best-seller">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
                     </div>
@@ -2337,7 +2337,7 @@
                       <del>$32.39</del>
                     </div>
 
-                    <button class="add-cart-btn">add to cart</button>
+                    <button onclick="addToBag()" class="add-cart-btn">add to cart</button>
 
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -2425,7 +2425,7 @@
                       <del>$2000.00</del>
                     </div>
               
-                    <button class="add-cart-btn">add to cart</button>
+                    <button onclick="addToBag()" class="add-cart-btn">add to cart</button>
               
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -2498,7 +2498,7 @@
 
                   <div class="showcase-actions">
 
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
@@ -2510,7 +2510,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
 
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
 
@@ -2554,7 +2554,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2566,7 +2566,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2605,7 +2605,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2617,7 +2617,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2658,7 +2658,7 @@
                   <p class="showcase-badge angle pink">new</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2670,7 +2670,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2709,7 +2709,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2721,7 +2721,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2762,7 +2762,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2774,7 +2774,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2812,7 +2812,7 @@
                   <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2824,7 +2824,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2865,7 +2865,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2877,7 +2877,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2916,7 +2916,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2928,7 +2928,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -2969,7 +2969,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -2981,7 +2981,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button>
                -->
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -3020,7 +3020,7 @@
                     width="300">
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -3032,7 +3032,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
@@ -3073,7 +3073,7 @@
                   <p class="showcase-badge angle black">sale</p>
               
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button onclick="addtocart()" class="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
               
@@ -3085,7 +3085,7 @@
                       <ion-icon name="repeat-outline"></ion-icon>
                     </button> -->
               
-                    <button class="btn-action">
+                    <button onclick="addToBag()" class="btn-action">
                       <ion-icon name="bag-add-outline"></ion-icon>
                     </button>
                   </div>
