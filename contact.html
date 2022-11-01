@@ -7,6 +7,8 @@
     <title>Contact us</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/images/logo/AD black.png" type="image/x-icon">
     <!-- <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -90,6 +92,13 @@
             padding: 10px 20px;
             border-radius: 10px;
         }
+
+        .btn:hover{
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+        }
       </style>
 </head>
 <body>
@@ -108,7 +117,7 @@
             </div>
             <div class="email-id">
                 <label for="e-mail">Email</label>
-                <input type="email" name="email" id="e-mail" placeholder="Email Address">
+                <input type="email" name="email" id="e-mail" placeholder="Email Address" required>
             </div>
             <div class="message">
                 <label for="text-area" class="msg">Your Message</label>
