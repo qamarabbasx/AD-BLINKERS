@@ -1,3 +1,8 @@
+.product-grid .showcase-title:hover{
+    color: rgb(252, 98, 81);
+}
+
+
 .best-seller{
     border: 1px solid #e1e1e1;
     padding: 4px;
@@ -18,3 +23,272 @@
     background-color: black;
 }
 
+.product-detail{
+    padding: 1rem 6rem;
+    position: fixed;
+    z-index: 10;
+    top: 10%;
+    display: none;
+    background-color: white;
+}
+
+.product-main-box{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-items: center;
+    align-items: center;
+    padding:6rem 2rem;
+    box-shadow: 0px 0px 30px 10px #dddddd;
+    border-radius: 60px;
+    gap: 3rem;
+}
+
+.showcase-title:hover{
+    cursor: pointer;
+    color: hsl(353, 100%, 78%);
+}
+
+.close-sign{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.price-tag{
+    margin-top: 6px;
+}
+
+.product-btn{
+    border: 1px solid black;
+    padding: 4px 9px;
+    font-size: 16px;
+    border-radius: 13px;
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+.product-btn:hover{
+    transform: scale(1.1);
+}
+
+.btn-action{
+    cursor: pointer;
+}
+
+/* Cart CSS */
+
+.openCart-btn{
+    background-color: #fb9387;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 13px;
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+.openCart-btn:hover{
+    background-color: rgb(248, 129, 116);
+    transform: scale(1.1);
+}
+
+.cart-close{
+    top: 3%;
+    right: 3%;
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.content-section{
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    width: 90vw;
+    height: 90vh;
+    top: 5%;
+    left: 5%;
+    padding: 2rem;
+    box-shadow: 0 0 10px 20px #dddddd;
+    border-radius: 10px;
+    display: none;
+    overflow: auto;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    display: none;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+/* favourites*/
+
+#fav-btn{
+    position: relative;
+}
+
+.favourite-container{
+    position: absolute;
+    z-index: 6;
+    background-color: white;
+    box-shadow: 0 0 7px 2px #cbcbcb;
+    right: 60%;
+    border-radius: 14px;
+    padding: 2px 30px;
+    display: none;
+}
+
+.image-title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    padding: 16px 0;
+    border-bottom: 2px solid black;
+    width: 200px;
+}
+
+.favourite-image{
+    max-width: 50%;
+}
+
+.fav-title{
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+.fav-price{
+    margin-top: 13px;
+    font-size: 20px;
+}
+
+.fav-remove-btn{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 3px 6px;
+    margin-top: 16px;
+}
+
+.fav-remove-btn:hover{
+    background-color: #fca7a7;
+}
