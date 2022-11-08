@@ -292,3 +292,8 @@
 .fav-remove-btn:hover{
     background-color: #fca7a7;
 }
+
+
+.product-description{
+    display: none;
+}

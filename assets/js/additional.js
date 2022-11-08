@@ -53,6 +53,9 @@ function removeFromBag() {
   subtractBag--;
   document.getElementById("product-counter").innerText = bag + subtractBag;
 }
+function clearBag() {
+  document.getElementById("product-counter").textContent = 0; 
+}
 
 // for Mobile//
 
@@ -77,6 +80,7 @@ function closeProduct() {
 }
 
 
+
 let addToCartButtons = document.getElementsByClassName(`showcase-title`);
 for (let i = 0; i < addToCartButtons.length; i++) {
   let button = addToCartButtons[i];
@@ -88,12 +92,13 @@ for (let i = 0; i < addToCartButtons.length; i++) {
     let title = document.getElementsByClassName(`showcase-title`)[i].textContent;
     let price = document.getElementsByClassName(`price`)[i].innerText;
     let imageSrc = document.getElementsByClassName(`display-image`)[i].src;
-    addItemToCart(title, price, imageSrc);
+    let productDescription = document.getElementsByClassName(`product-description`)[i].textContent;
+    addItemToCart(title, price, imageSrc, productDescription);
   });
 }
 
 
-function addItemToCart(title, price, imageSrc) {
+function addItemToCart(title, price, imageSrc, productDescription) {
   let cartRow = document.getElementById(`product-box`);
   // cartRow.classList.add(`product-main-box`)
   let cartItems = document.getElementsByClassName(`product-detail`)[0];
@@ -103,8 +108,8 @@ function addItemToCart(title, price, imageSrc) {
                     </div>
                     <div class="product-details">
                       <h1 id="product-title">${title}</h1>
-                      <p id="product-description">AD Blinkers is a leading distribution network & E-commerce solution provider. Established in 2017 in Houston, USA, and growing globally, with a mission to bring an e-commerce journey for everyone.</p>
-                        <label for"product-size">Size:</label>
+                      <p id="product-description">${productDescription}</p>
+                      <label for"product-size">Size:</label>
                       <select name="size" id="product-size">
                         <option value="2">XL</option>
                         <option value="3">L</option>
@@ -189,11 +194,12 @@ function ready() {
 function purchaseClicked() {
   alert('Thank you for your purchase')
   var cartItems = document.getElementsByClassName('cart-items')[0]
-  document.getElementById(`product-counter`).innerText = 0
   while (cartItems.hasChildNodes()) {
       cartItems.removeChild(cartItems.firstChild);
-  }
-  updateCartTotal()
+    }
+  clearBag();
+  updateCartTotal();
+  
 }
 
 function removeCartItem(event) {
@@ -289,7 +295,7 @@ function closeFav(){
 
 function addItemToFavourite(title, price, imageSrc){
   var forFavRow = document.createElement('div')
-  forFavRow.classList.add('image-title-box')
+  forFavRow.classList.add('favourite-container')
   let favRow = document.getElementById(`fav-box`);
   // let favItems = document.getElementsByClassName(`fav-main`)[0];
   let favRowContents = `
