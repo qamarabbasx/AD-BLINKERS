@@ -13,16 +13,14 @@ http.onload = function(){
         let {products} = JSON.parse(this.responseText);
         let output = ``;
         console.log(products);
-        if(products.category== "smartphones"){}
+      
 
         for(let item of products){
             output += `<div class="showcase">
             
             <div class="showcase-banner">
-              <img src="${item.images[0]}" alt="${item.images}" class="product-img default"
-                width="300">
-
-              <p class="showcase-badge angle black">sale</p>
+              <img src="${item.images[0]}" alt="${item.images}" class="product-img">
+              
           
               <div class="showcase-actions">
                 <button class="btn-action">
