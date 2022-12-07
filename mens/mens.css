@@ -7,8 +7,10 @@
 }
 
 
-.product-img{
-    max-width: 100%;
+.product-grid .product-img {
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
 }
 
 .cart-btn{
@@ -21,5 +23,14 @@
 
 .cart-btn:hover{
     color: rgb(218, 218, 218);
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(80, 80, 80);
+}
+
+.product-grid .showcase{
+    padding-bottom: 1rem;
+}
+
+.product-grid .showcase-title{
+    color: rgb(68, 68, 68);
+    font-weight: bold;
 }

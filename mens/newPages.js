@@ -19,7 +19,7 @@ http.onload = function(){
             output += `<div class="showcase">
             
             <div class="showcase-banner">
-              <img src="${item.images[0]}" alt="${item.images}" class="product-img">
+              <img src="${item.images}" alt="${item.images}" class="product-img">
               
           
               <div class="showcase-actions">

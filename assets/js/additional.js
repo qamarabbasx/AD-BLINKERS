@@ -319,3 +319,91 @@ for (let i = 0; i < addToFavouriteButtons.length; i++) {
     addItemToFavourite(title, price, imageSrc);
   });
 }
+
+//SHuffle Function//
+
+// function shuffle() {
+//   var container = document.getElementsByClassName("for-shuffle");
+//   for(let i = 0; i < container.length; i++){
+
+//     var elementsArray = Array.prototype.slice.call(container[i].getElementsByClassName('showcase'));
+//       elementsArray.forEach(function(element){
+//       container[i].removeChild(element);
+          
+//     })
+//     shuffleArray(elementsArray);
+//     elementsArray.forEach(function(element){
+//     container[i].appendChild(element);
+//   })
+//   let addToCartButtons = document.getElementsByClassName(`showcase-title`);
+//   for (let i = 0; i < addToCartButtons.length; i++) {
+//     let button = addToCartButtons[i];
+//     button.addEventListener(`click`, function addToCartClicked(event) {
+//       document.getElementById(`product-section`).style.display = `block`;
+//       document.getElementById(`main-body`).style.opacity = `10%`;
+//       button = event.target;
+//       // let shopItem = button.parentElement;
+//       let title =
+//         document.getElementsByClassName(`showcase-title`)[i].textContent;
+//       let price = document.getElementsByClassName(`price`)[i].innerText;
+//       let imageSrc = document.getElementsByClassName(`display-image`)[i].src;
+//       let productDescription =
+//         document.getElementsByClassName(`product-description`)[i].textContent;
+//       addItemToCart(title, price, imageSrc, productDescription);
+//     });
+//   }
+  
+//   function addItemToCart(title, price, imageSrc, productDescription) {
+//     let cartRow = document.getElementById(`product-box`);
+//     // cartRow.classList.add(`product-main-box`)
+//     let cartItems = document.getElementsByClassName(`product-detail`)[0];
+//     let cartRowContents = `
+//                       <div class="product-image">
+//                         <img src="${imageSrc}" id="productImage" alt="" style="max-width:80%;">
+//                       </div>
+//                       <div class="product-details">
+//                         <h1 id="product-title">${title}</h1>
+//                         <p id="product-description">${productDescription}</p>
+//                         <label for"product-size">Size:</label>
+//                         <select name="size" id="product-size">
+//                           <option value="2">XL</option>
+//                           <option value="3">L</option>
+//                           <option value="4">M</option>
+//                           <option value="5">S</option>
+//                           <option value="6">XS</option>
+//                         </select>
+//                         <h4 class="price-tag" id="product-price">${price}</h4>
+//                         <button class="product-btn product-btn-java" id="button-product">Add to Cart</button>
+//                         <button onclick="openCart()" class="openCart-btn">
+//                           Open Cart
+//                         </button>
+//                       </div>`;
+//     cartRow.innerHTML = cartRowContents;
+//     cartItems.append(cartRow);
+  
+//     var productforAddToCartButtons =
+//       document.getElementsByClassName('product-btn-java');
+//     for (let i = 0; i < productforAddToCartButtons.length; i++) {
+//       var button = productforAddToCartButtons[i];
+//       button.addEventListener('click', function () {
+//         var cartTitle = title;
+//         var cartPrice = price;
+//         var cartImageSrc = imageSrc;
+//         forAddItemToCart(cartTitle, cartPrice, cartImageSrc);
+//         updateCartTotal();
+//       });
+//     }
+//   }}
+//   }
+
+// function shuffleArray(array) {
+//     for (var i = array.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i + 1));
+//         var temp = array[i];
+//         array[i] = array[j];
+//         array[j] = temp;
+//     }
+//     return array;
+// }
+
+
